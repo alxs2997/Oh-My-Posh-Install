@@ -1,0 +1,64 @@
+1.
+
+bash -c "$(wget -qO- 
+)"
+
+Instalación de Oh My Posh:
+
+1.
+
+curl -s https://ohmyposh.dev/install.sh | bash -s
+
+2.
+
+export PATH=$PATH:/home/{su_usuario}/.local/bin
+
+3.
+
+oh-my-posh
+
+Instalar Fuente Recomendada Meslo:
+
+oh-my-posh font install meslo
+
+Instalación de Temas de Oh My Posh:
+
+1.
+
+mkdir ~/.poshthemes
+
+2.
+
+wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/themes.zip -O ~/.poshthemes/themes.zip
+
+3.
+
+unzip ~/.poshthemes/themes.zip -d ~/.poshthemes
+
+4.
+
+chmod u+rw ~/.poshthemes/*.json
+
+5.
+
+rm ~/.poshthemes/themes.zip
+
+6.
+
+oh-my-posh get shell
+
+Configuración del tema:
+1.
+
+sudo nano ~/.bashrc
+
+2.
+
+eval "$(oh-my-posh init bash --config ~/.poshthemes/.omp.json)"
+
+3. Guarde y cierre el archivo.
+
+
+4. En la configuración del terminal, seleccione la fuente Meslo que hemos instalado anteriormente.
+
+5. Reiniciar el sistema para aplicar todos los cambios.
