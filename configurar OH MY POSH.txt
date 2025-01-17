@@ -1,8 +1,3 @@
-1.
-
-bash -c "$(wget -qO- 
-)"
-
 Instalación de Oh My Posh:
 
 1.
@@ -54,7 +49,7 @@ sudo nano ~/.bashrc
 
 2.
 
-eval "$(oh-my-posh init bash --config ~/.poshthemes/.omp.json)"
+eval "$(oh-my-posh init bash --config ~/.poshthemes/negligible.omp.json)"
 
 3. Guarde y cierre el archivo.
 
